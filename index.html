@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Wai Phyoe Aung — Portfolio">
+<meta property="og:description" content="360 IMC account manager in Yangon. BTL-led: events, activations, launches.">
+<meta property="og:image" content="img/portrait.webp">
+<meta name="theme-color" content="#121211">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>Wai Phyoe Aung Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Wai Phyoe Aung — 360 IMC account manager in Yangon. BTL-led: events, activations, launches.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="preload" as="image" href="img/portrait-s.webp">
+<style>
+/* Layout: an agency job docket — ink bands for chapters, paper for the work, one signal colour for BTL. */
+:root{
+  --paper:#EFECE4; --paper-2:#E5E1D6; --card:#F7F5EF; --fg:#121211; --muted:#58554D; --line:rgba(18,18,17,.16);
+  --band:#121211; --band-fg:#EFECE4; --band-muted:#A8A49A; --band-line:rgba(239,236,228,.2);
+  --accent:#E5450F; --on-accent:#121211;
+  --display:'Archivo','Arial Narrow',Arial,sans-serif; --body:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif; --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  --wrap:1280px; --r:2px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#151513; --paper-2:#1C1C19; --card:#1E1E1B; --fg:#EFECE4; --muted:#A8A49A; --line:rgba(239,236,228,.14);
+  --band:#0A0A09; --band-fg:#EFECE4; --band-muted:#A8A49A; --band-line:rgba(239,236,228,.16);
+  --accent:#FF5A1F; --on-accent:#121211; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#151513; --paper-2:#1C1C19; --card:#1E1E1B; --fg:#EFECE4; --muted:#A8A49A; --line:rgba(239,236,228,.14);
+  --band:#0A0A09; --band-fg:#EFECE4; --band-muted:#A8A49A; --band-line:rgba(239,236,228,.16);
+  --accent:#FF5A1F; --on-accent:#121211; color-scheme:dark }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--band)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-stretch:68%;font-weight:800;text-transform:uppercase;line-height:.86;margin:0;text-wrap:balance;letter-spacing:-.005em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:720px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.band{background:var(--band);color:var(--band-fg)}
+.band .muted{color:var(--band-muted)}
+.muted{color:var(--muted)}
+.dot{color:var(--accent)}
+section{scroll-margin-top:64px}
+.docket{display:flex;flex-wrap:wrap;align-items:center;gap:6px 28px;border-bottom:1px solid currentColor;padding-bottom:12px}
+.docket .n{color:var(--accent);font-weight:500}
+.docket .r{margin-left:auto}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--band);color:var(--band-fg);border-bottom:1px solid var(--band-line)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:56px}
+.logo{font-family:var(--display);font-stretch:68%;font-weight:800;font-size:26px;text-decoration:none;text-transform:uppercase;letter-spacing:.01em}
+.nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:10px 10px;white-space:nowrap;color:var(--band-muted)}
+.nav a:hover{color:var(--band-fg)}
+.nav a.cta{background:var(--accent);color:var(--on-accent);font-weight:500}
+@media (max-width:560px){.nav a.hide-s{display:none}}
+
+/* hero */
+.hero .wrap{padding-block:40px 48px;display:grid;gap:40px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:32px;align-items:end}
+@media (min-width:900px){.hero-grid{grid-template-columns:minmax(0,1.5fr) minmax(0,.7fr)}}
+.name{font-size:clamp(84px,17vw,236px);line-height:.78}
+.name span{display:block}
+@media (prefers-reduced-motion:no-preference){
+  .name span{animation:rise .9s cubic-bezier(.2,.7,.1,1) both}
+  .name span:nth-child(2){animation-delay:.08s}.name span:nth-child(3){animation-delay:.16s}
+  @keyframes rise{from{transform:translateY(18%);clip-path:inset(0 0 100% 0)}to{transform:none;clip-path:inset(0 0 -10% 0)}}
+}
+.lede{font-size:clamp(20px,2.4vw,30px);line-height:1.2;max-width:34ch;margin:0}
+.lede .muted{display:inline}
+.portrait{display:grid;gap:10px;max-width:420px}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;filter:grayscale(1) contrast(1.05)}
+.portrait .mono{display:flex;justify-content:space-between;color:var(--band-muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:5px 9px;border:1px solid var(--line);color:var(--muted);background:transparent;line-height:1.2}
+.chip.on{background:var(--fg);color:var(--paper);border-color:var(--fg)}
+.chip.btl.on{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.band .chip{border-color:var(--band-line);color:var(--band-muted)}
+.band .chip.on{background:var(--band-fg);color:var(--band);border-color:var(--band-fg)}
+.band .chip.btl.on{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--band-line)}
+@media (min-width:720px){.stats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1100px){.stats{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.stat{padding:18px 16px 4px 0;display:grid;gap:8px;align-content:start}
+.stat b{font-family:var(--display);font-stretch:68%;font-weight:800;font-size:clamp(44px,5vw,64px);line-height:.85;font-variant-numeric:tabular-nums}
+.stat.hl b{color:var(--accent)}
+.stat span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--band-muted);line-height:1.4}
+
+/* section heads */
+.sec{padding-block:72px}
+.sec-head{display:grid;gap:18px;margin-bottom:32px}
+.sec-head h2{font-size:clamp(52px,8vw,110px)}
+.sec-head p{max-width:60ch;margin:0}
+
+/* filters */
+.filters{display:grid;gap:14px;margin-bottom:28px;padding:16px 0;border-block:1px solid var(--line)}
+.frow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.frow .label{width:84px;color:var(--muted)}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button,.fchip{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:9px 13px;min-height:40px;border:1px solid var(--line);background:transparent;color:var(--fg)}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--paper);border-color:var(--fg)}
+.fchip[aria-pressed="true"]{background:var(--fg);color:var(--paper);border-color:var(--fg)}
+.fchip.btl[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.count{margin-left:auto;color:var(--muted)}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:28px 20px}
+.card{all:unset;box-sizing:border-box;display:grid;gap:12px;align-content:start;cursor:pointer;min-width:0}
+.card:focus-visible{outline:2px solid var(--accent);outline-offset:6px}
+.thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--paper-2)}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.1,1)}
+.card:hover .thumb img{transform:scale(1.04)}
+.thumb .tag{position:absolute;left:10px;top:10px;background:var(--band);color:var(--band-fg);padding:4px 8px}
+.thumb .stat-tag{position:absolute;right:0;bottom:0;background:var(--accent);color:var(--on-accent);font-family:var(--display);font-stretch:68%;font-weight:800;font-size:30px;line-height:1;padding:8px 12px 6px}
+.type-cover{display:grid;align-content:end;padding:18px;gap:2px;background:var(--band);color:var(--band-fg)}
+.type-cover span{font-family:var(--display);font-stretch:68%;font-weight:800;text-transform:uppercase;font-size:34px;line-height:.9}
+.type-cover span.v{color:var(--accent)}
+.card .meta{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted)}
+.card h3{font-size:34px}
+.card p{margin:0;color:var(--muted);font-size:15px;line-height:1.45}
+.empty{padding:40px 0;color:var(--muted)}
+
+/* approach */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:28px}
+.step{border-top:4px solid var(--fg);padding-top:16px;display:grid;gap:8px;align-content:start}
+.step b{font-family:var(--display);font-stretch:68%;font-weight:800;font-size:56px;line-height:.85;color:var(--accent)}
+.step h3{font-family:var(--body);font-stretch:100%;text-transform:none;font-size:22px;font-weight:700;line-height:1.2}
+.step p{margin:0;color:var(--muted);font-size:16px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px;margin-top:40px;border-top:1px solid var(--line);padding-top:20px;font-size:15px}
+.facts p{margin:6px 0 0}
+
+/* career */
+.tl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));border-top:1px solid var(--band-line)}
+.tl li{padding:18px 16px 18px 0;display:grid;gap:8px;align-content:start;border-bottom:1px solid var(--band-line)}
+.tl li strong{font-size:20px;line-height:1.15}
+.tl li .muted{font-size:14px}
+.tl li p{margin:0;font-size:15px;line-height:1.4}
+.tl li.now{background:var(--accent);color:var(--on-accent);padding-left:16px}
+.tl li.now .muted{color:var(--on-accent)}
+
+/* clients */
+.marquee{overflow:hidden;border-block:1px solid var(--line);padding-block:18px;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mtrack{display:flex;gap:28px;width:max-content;font-family:var(--display);font-stretch:70%;font-weight:700;text-transform:uppercase;font-size:clamp(40px,6vw,76px);line-height:1;white-space:nowrap}
+.mtrack i{font-style:normal;color:var(--accent)}
+@media (prefers-reduced-motion:no-preference){.mtrack{animation:slide 48s linear infinite}.marquee:hover .mtrack{animation-play-state:paused}@keyframes slide{to{transform:translateX(-50%)}}}
+@media (prefers-reduced-motion:reduce){.mtrack{flex-wrap:wrap;width:auto;white-space:normal}.mtrack .dup{display:none}}
+
+/* creative + crew */
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),1fr));grid-auto-flow:dense;gap:10px}
+.wall button{all:unset;cursor:pointer;display:block;overflow:hidden;background:var(--paper-2)}
+.wall button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wall img{width:100%;height:100%;object-fit:cover;aspect-ratio:1;transition:transform .5s}
+.wall button:hover img{transform:scale(1.04)}
+.wall .wide{grid-column:span 2}
+.wall .wide img{aspect-ratio:2/1}
+.crew{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+.crew img{height:clamp(180px,28vw,300px);width:auto;max-width:none;scroll-snap-align:start;flex:none}
+
+/* contact */
+.contact{background:var(--accent);color:var(--on-accent)}
+.contact .wrap{padding-block:64px 48px;display:grid;gap:40px}
+.contact h2{font-size:clamp(64px,13vw,190px)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px;border-top:1px solid var(--on-accent);padding-top:20px}
+.cgrid div{display:grid;gap:6px;align-content:start}
+.cgrid .v{font-size:clamp(20px,2.4vw,28px);font-weight:600;user-select:all;overflow-wrap:anywhere}
+.copy{justify-self:start;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:var(--on-accent);color:var(--accent);border:0;padding:9px 14px;min-height:40px}
+footer{padding-block:20px;color:var(--band-muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* case dialog */
+dialog{border:0;padding:0;max-width:none;max-height:none;background:var(--paper);color:var(--fg)}
+dialog::backdrop{background:rgba(10,10,9,.72)}
+#case{width:min(1200px,100vw);height:100dvh;margin:0 auto;overflow-y:auto;overscroll-behavior:contain}
+@media (min-width:900px){#case{height:calc(100dvh - 48px);margin-top:24px}}
+.cbar{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:8px;background:var(--band);color:var(--band-fg);padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));padding-top:max(10px,env(safe-area-inset-top,0px))}
+.cbar .mono{color:var(--band-muted);margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.ibtn{display:inline-grid;place-items:center;min-width:44px;height:44px;border:1px solid var(--band-line);background:transparent;color:var(--band-fg);padding:0 12px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.ibtn:hover{border-color:var(--band-fg)}
+.cbody{padding:28px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px));display:grid;gap:28px}
+@media (min-width:720px){.cbody{padding-inline:40px}}
+.cbody>*{min-width:0}
+.cbody h2{font-size:clamp(48px,7vw,96px);overflow-wrap:anywhere}
+.cbody .dek{font-size:clamp(18px,2vw,22px);max-width:56ch;margin:0;color:var(--muted)}
+.gal-wrap{position:relative}
+.gal{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.gal img{height:min(58vh,560px);width:auto;max-width:min(88vw,1100px);object-fit:cover;flex:none;scroll-snap-align:start;background:var(--paper-2)}
+@media (max-width:600px){.gal img{height:46vh}}
+.gnav{display:flex;gap:8px;margin-top:10px}
+.gnav button{min-width:44px;height:44px;border:1px solid var(--line);background:transparent;font-family:var(--mono);font-size:12px}
+.cgrid2{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:900px){.cgrid2{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);align-items:end}}
+.rows{display:grid;gap:14px;border-top:1px solid var(--line);padding-top:16px}
+.rows div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px}
+.rows .mono{color:var(--muted);padding-top:3px}
+.bigstat{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.bigstat b{font-family:var(--display);font-stretch:68%;font-weight:800;font-size:clamp(72px,10vw,128px);line-height:.78;color:var(--accent)}
+.bigstat span{color:var(--muted);line-height:1.5}
+.sun{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px}
+.sun div{background:var(--band);color:var(--band-fg);padding:18px;display:grid;gap:30px}
+.sun div b{font-family:var(--display);font-stretch:68%;font-weight:800;text-transform:uppercase;font-size:44px;line-height:.9}
+.sun div.v{background:var(--accent);color:var(--on-accent)}
+#lb{width:100vw;height:100dvh;background:var(--band);color:var(--band-fg)}
+#lb .inner{height:100%;display:grid;grid-template-rows:auto minmax(0,1fr);}
+#lb img{margin:auto;max-height:100%;max-width:100%;object-fit:contain;padding:12px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">Wai<span class="dot">.</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#how" class="hide-s">How I work</a>
+      <a href="#career">Career</a>
+      <a href="#creative" class="hide-s">Creative</a>
+      <a href="#contact" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="band hero" aria-label="Introduction">
+    <div class="wrap">
+      <div class="docket mono" style="color:var(--band-fg);border-color:var(--band-line)">
+        <span class="n">Portfolio</span><span>2019 — 2026</span><span class="muted">360 IMC Account Manager · BTL-led</span><span class="r muted">Yangon, Myanmar</span>
+      </div>
+      <div class="hero-grid">
+        <div style="display:grid;gap:28px;min-width:0">
+          <h1 class="name" aria-label="Wai Phyoe Aung"><span>Wai</span><span>Phyoe</span><span>Aung<span class="dot" style="display:inline">.</span></span></h1>
+          <p class="lede">Brief in. Launch out. <span class="muted">I sit between the client and the people who build the work — vendors, suppliers and creative. I write the documents, negotiate the terms, keep delivery on track and report back.</span></p>
+          <div class="chips" aria-label="Channels I plan">
+            <span class="chip btl on">BTL</span><span class="chip on">ATL</span><span class="chip on">Digital</span><span class="chip on">KOL</span><span class="chip on">PR</span>
+          </div>
+        </div>
+        <figure class="portrait" style="margin:0">
+          <img src="img/portrait-s.webp" srcset="img/portrait-s.webp 414w, img/portrait.webp 814w" sizes="(min-width:900px) 420px, 90vw" width="414" height="560" alt="Portrait of Wai Phyoe Aung" fetchpriority="high">
+          <figcaption class="mono"><span>Client Servicing · Cogent Myanmar</span><span class="dot">●</span></figcaption>
+        </figure>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>7 yrs</b><span>Agency account management</span></div>
+        <div class="stat"><b>15+</b><span>International brands handled</span></div>
+        <div class="stat hl"><b>10+</b><span>BTL campaigns delivered</span></div>
+        <div class="stat"><b>24.6K</b><span>Attendees · Taunggyi Thadingyut Music Festival</span></div>
+        <div class="stat"><b>6K+</b><span>Crowd · Red Bull × Myanmar Thingyan</span></div>
+        <div class="stat"><b>2M+</b><span>Social reach · Red Bull Power Race</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="sec" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="mono muted">Selected work · 2022 — 2026</span>
+        <h2 id="work-h">The work<span class="dot">.</span></h2>
+        <p class="muted">Each project shows the brief, what I owned and what came out of it. Filter by year or by channel to see the mix.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <div class="frow">
+          <span class="mono label">Year</span>
+          <div class="seg" id="years">
+            <button type="button" data-y="all" aria-pressed="true">All</button>
+            <button type="button" data-y="2026" aria-pressed="false">2026</button>
+            <button type="button" data-y="2025" aria-pressed="false">2025</button>
+            <button type="button" data-y="archive" aria-pressed="false">2022–24</button>
+          </div>
+        </div>
+        <div class="frow">
+          <span class="mono label">Channel</span>
+          <div class="seg" id="chans">
+            <button type="button" class="fchip btl" data-c="BTL" aria-pressed="false">BTL</button>
+            <button type="button" class="fchip" data-c="ATL" aria-pressed="false">ATL</button>
+            <button type="button" class="fchip" data-c="Digital" aria-pressed="false">Digital</button>
+            <button type="button" class="fchip" data-c="KOL" aria-pressed="false">KOL</button>
+            <button type="button" class="fchip" data-c="PR" aria-pressed="false">PR</button>
+          </div>
+          <span class="mono count" id="count" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden>No project uses all of those channels together. Clear a channel to see more.</p>
+    </div>
+  </section>
+
+  <section id="how" class="sec" style="padding-top:0" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="mono muted">How I work</span>
+        <h2 id="how-h">How I run<br>an account<span class="dot">.</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step"><b>01</b><h3>Decode the brief</h3><p>Find the business problem behind the ask.</p></div>
+        <div class="step"><b>02</b><h3>Brief the team</h3><p>One page. One goal. Clear guardrails for creative.</p></div>
+        <div class="step"><b>03</b><h3>Own the ground</h3><p>Vendors, crew, budget, run-of-show. No surprises on the day.</p></div>
+        <div class="step"><b>04</b><h3>Report and grow</h3><p>Results, lessons, and the next brief worth winning.</p></div>
+      </div>
+      <div class="facts">
+        <div><span class="mono muted">Strengths</span><p>Client relationships · Negotiation · Budget control · Event production · Team leadership · Contracts · AI workflows</p></div>
+        <div><span class="mono muted">Languages</span><p>Burmese · English · Japanese (basic)</p></div>
+        <div><span class="mono muted">Education</span><p>B.A. Tourism — National Management Degree College, 2019. Digital Marketing (UIUC), Facebook Ads (Meta), Financial Markets (Yale) — Coursera.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="career" class="band" aria-labelledby="career-h">
+    <div class="wrap sec">
+      <div class="sec-head">
+        <span class="mono muted">Career</span>
+        <h2 id="career-h">Seven years.<br>One through-line<span class="dot">:</span> the client.</h2>
+      </div>
+      <ol class="tl">
+        <li><span class="mono muted">2019 — 21</span><strong>The Vest Agency</strong><span class="muted">Account Executive · Remote</span><p>Chatbot, social and paid campaigns.</p></li>
+        <li><span class="mono muted">2021 — 22</span><strong>Yolo Digital Marketing</strong><span class="muted">Account Executive</span><p>Digital strategy for top-tier accounts.</p></li>
+        <li><span class="mono muted">2022 — 23</span><strong>Idea Capsule</strong><span class="muted">Senior Account Executive</span><p>West Lake Tyre, TDS, Beausta, U.S. Embassy.</p></li>
+        <li><span class="mono muted">2023 — 24</span><strong>Midas Creative</strong><span class="muted">Senior Account Executive</span><p>PEP events, KOL and esports campaigns.</p></li>
+        <li><span class="mono muted">2024</span><strong>Vero Myanmar</strong><span class="muted">Senior Account Executive</span><p>Tiger Festive, Samsung launch. Led 4 AEs.</p></li>
+        <li><span class="mono muted">2024 — 25</span><strong>MCIX</strong><span class="muted">Account Manager</span><p>Sun Pharma 360 IMC, Volini tournaments. Led 5 AEs.</p></li>
+        <li class="now"><span class="mono">Dec 2025 — now</span><strong>Cogent Myanmar</strong><span class="muted">Client Servicing · Voodoo / Maven</span><p>Red Bull, Sponsor. Freelance: Altitude.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="clients-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="mono muted">Beverage · FMCG · Tech · Pharma · Retail · Gov</span>
+        <h2 id="clients-h">Brands I've worked with<span class="dot">.</span></h2>
+      </div>
+    </div>
+    <div class="marquee" aria-label="Client list">
+      <div class="mtrack">
+        <span>Red Bull <i>/</i> Sponsor <i>/</i> Sun Pharma <i>/</i> Unilever <i>/</i> Tiger Beer <i>/</i> Samsung <i>/</i> PEP Myanmar <i>/</i> Royal Myanmar Teamix <i>/</i> Beausta <i>/</i> West Lake Tyre <i>/</i> TDS Myanmar <i>/</i> AA Medical <i>/</i> U.S. Embassy <i>/</i> BOSS <i>/</i> Deli <i>/</i></span>
+        <span class="dup" aria-hidden="true">Red Bull <i>/</i> Sponsor <i>/</i> Sun Pharma <i>/</i> Unilever <i>/</i> Tiger Beer <i>/</i> Samsung <i>/</i> PEP Myanmar <i>/</i> Royal Myanmar Teamix <i>/</i> Beausta <i>/</i> West Lake Tyre <i>/</i> TDS Myanmar <i>/</i> AA Medical <i>/</i> U.S. Embassy <i>/</i> BOSS <i>/</i> Deli <i>/</i></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="creative" class="sec" style="padding-top:0" aria-labelledby="cr-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="mono muted">Brief → work</span>
+        <h2 id="cr-h">Briefs I wrote.<br>Work it became<span class="dot">.</span></h2>
+        <p class="muted">A good brief is half the work: objective, audience, message and guardrails on one page, then fast answers when creative asks. Tap any piece to see it larger.</p>
+      </div>
+      <div class="wall" id="wall"></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0" aria-labelledby="crew-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="mono muted">The crews</span>
+        <h2 id="crew-h">Nothing ships solo<span class="dot">.</span></h2>
+      </div>
+      <div class="crew" id="crew" tabindex="0" aria-label="Team photos, scroll sideways"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <span class="mono">Contact</span>
+      <h2 id="contact-h">Got a brief?<br>Let's launch it.</h2>
+      <div class="cgrid">
+        <div><span class="mono">Email</span><span class="v" id="email">waiphyoeaung322@gmail.com</span><button class="copy" type="button" data-copy="email">Copy email</button></div>
+        <div><span class="mono">Phone</span><span class="v" id="phone">+95 9 795 255 815</span><button class="copy" type="button" data-copy="phone">Copy number</button></div>
+        <div><span class="mono">Based in</span><span class="v">Yangon, Myanmar</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="band"><div class="wrap mono"><span>Wai Phyoe Aung · Portfolio 2026</span><span>360 IMC · BTL-led</span></div></footer>
+
+<dialog id="case" aria-labelledby="case-title"></dialog>
+<dialog id="lb" aria-label="Creative piece"><div class="inner"><div class="cbar"><span class="mono" id="lb-cap"></span><button class="ibtn" type="button" id="lb-prev" aria-label="Previous piece">←</button><button class="ibtn" type="button" id="lb-next" aria-label="Next piece">→</button><button class="ibtn" type="button" id="lb-close">Close</button></div><img id="lb-img" alt=""></div></dialog>
+
+<script>
+const D={"a06-display":[826,550],"a06-fold":[826,550],"a06-stage":[822,526],"a06-vip":[826,550],"al-balloon":[733,1100],"al-confetti":[1100,733],"al-crowd":[1100,733],"al-kbz":[1100,733],"al-keen":[1100,733],"al-royald":[1100,733],"beausta-1":[520,912],"beausta-2":[572,914],"beausta-3":[524,912],"cr-cow":[622,610],"cr-pepman":[612,610],"cr-rule":[496,666],"cr-tigerbanner":[1100,431],"cr-tigerbanner2":[1100,427],"cr-tigerposter":[878,1100],"cr-xmas":[514,650],"other-esports":[740,484],"pf-0":[880,1100],"pf-1":[880,1100],"pf-2":[880,1100],"pf-3":[880,1100],"pf-4":[880,1100],"pf-5":[880,1100],"pjr-group":[956,636],"pjr-key":[450,680],"pjr-key2":[454,690],"pjr-kol1":[410,620],"pjr-kol2":[464,620],"pr-bangkok":[825,1100],"pr-kv":[1100,483],"pr-photo1":[825,1100],"pr-photo2":[1100,825],"pr-poster":[1100,1100],"pr-social":[1100,1100],"shoot-1":[466,468],"shoot-2":[466,466],"shoot-3":[466,466],"shoot-green":[412,634],"shoot-set":[412,634],"shoot-wall":[862,646],"sic-award":[928,616],"sic-campus":[594,596],"sic-handover":[936,622],"sp-0":[880,1100],"sp-2":[880,1100],"sp-3":[880,1100],"sp-4":[1100,483],"tea-comic":[750,936],"tea-laptop":[846,472],"tea-pack":[442,444],"tea-render":[846,350],"tea-sign":[448,442],"tea-wall":[542,928],"team-1":[1100,547],"team-2":[1100,547],"team-night":[720,478],"team-stage":[652,434],"team-suits":[726,482],"team-table":[726,482],"tiger-artists":[518,808],"tiger-crowd":[656,404],"tiger-merch":[676,446],"tiger-poster":[696,870],"tiger-stage":[662,434],"tiger-sticker":[364,482],"ty-0":[1100,618],"ty-1":[880,1100],"ty-10":[1100,1100],"ty-2":[880,1100],"ty-3":[880,1100],"ty-4":[880,1100],"ty-5":[1100,1100],"ty-6":[1100,1100],"ty-7":[1100,1100],"ty-8":[1100,733],"ty-9":[1080,1080],"vo-0":[733,1100],"vo-1":[880,1100],"vo-2":[786,1100],"vo-3":[786,1100]};
+const P=[
+ {id:"power-race",y:"2026",n:"07",client:"Red Bull Myanmar",agency:"Cogent Myanmar · Voodoo",date:"Sep 2026",role:"Client Servicing",kicker:"Sport event · Live production",title:"Red Bull Power Race Myanmar",dek:"The national qualifier at Fortune Plaza / Myanmar Expo Hall, Yangon. Myanmar's winner went on to the international final in Bangkok.",brief:"Run a safe, fairly timed national race that sends a Myanmar athlete to Bangkok.",mine:"Link between Red Bull and the production, timing and media vendors. Wrote the scope, zone manuals and crew plan, checked registration, and reported back.",result:"450+ registrations, around 1,000 spectators, 2M+ social reach.",stat:"2M+",statL:"Social reach · 450+ registrations · ~1,000 spectators",ch:["BTL","Digital","PR"],img:["pr-kv","pr-photo2","pr-social","pr-bangkok","pr-poster","pr-photo1"],cover:"pr-poster"},
+ {id:"thingyan",y:"2026",n:"08",client:"Red Bull × Black Jack Entertainment",agency:"Cogent Myanmar · Voodoo",date:"Apr 2026",role:"Client Servicing",kicker:"Beverage · Music festival",title:"Red Bull × Myanmar Thingyan",dek:"Red Bull as title sponsor of the Myanmar Thingyan water festival on Pyay Road, Yangon, produced with Black Jack Entertainment.",brief:"Take over Myanmar Thingyan Festival for Red Bull.",mine:"Coordinated the production vendors, handled the contract between vendor and client, and wrote the reports.",result:"6K+ crowd, 10+ international artists, 2M+ social reach.",stat:"6K+",statL:"Crowd · 10+ international artists · 2M+ social reach",ch:["BTL","Digital","KOL"],img:["ty-5","ty-0","ty-1","ty-7","ty-6","ty-8","ty-2","ty-3","ty-4","ty-10"],cover:"ty-5"},
+ {id:"sponsor-shoot",y:"2026",n:"09",client:"Sponsor Electrolyte Drink",agency:"Cogent Myanmar",date:"2026",role:"Client Servicing",kicker:"Beverage · Content production",title:"Sponsor — the 2026 shoot",dek:"One shoot to supply Sponsor's 2026 visuals, from social posts to billboards.",brief:"Create photo assets for 2026 social media and billboards — every 360 placement.",mine:"Briefed creative, quoted and booked the photographer, talent and location, ran the shoot day and managed client approvals.",result:"One image bank now running across social posts and billboards.",stat:"360°",statL:"Placements from one shoot",ch:["ATL","Digital"],img:["sp-4","sp-0","sp-2","sp-3"],cover:"sp-3"},
+ {id:"poundfit",y:"2026",n:"10",client:"Sponsor × PoundFit",agency:"Cogent Myanmar",date:"2026",role:"Client Servicing",kicker:"Beverage · Fitness partnership",title:"Sponsor × PoundFit",dek:"PoundFit workout sessions with Sponsor as the hydration partner.",brief:"Put Sponsor in people's hands during a workout, where an electrolyte drink makes sense.",mine:"Set up the partnership with PoundFit: agreement, sampling and branding plan, on-site coordination, content and the report.",result:"Branded sessions with product sampling, plus a run of social posts from the classes.",stat:"Sweat→Sip",statL:"Sampling at the moment of need",ch:["BTL","Digital"],img:["pf-1","pf-2","pf-3","pf-4","pf-5","pf-0"],cover:"pf-2"},
+ {id:"altitude",y:"2026",n:"11",client:"Altitude Art Enterprise",agency:"Freelance",date:"Oct 2026",role:"Sponsorship lead",kicker:"Music festival · Sponsorship",title:"Taunggyi Thadingyut Music Festival",dek:"Vol. 2, 25–26 October 2026, AhWayYa Hot-Air Balloon Ground, Taunggyi. I handled the festival's sponsors for organiser Altitude.",brief:"Deliver every sponsor's contracted benefits on site — and prove it afterwards.",mine:"Point of contact for KBZ Bank, Royal-D + Hikari and Keen: contracts, booths and branding, photo coverage, post-event reports.",result:"24,643 attendees over two days and 3.21M festival social views. A report for each sponsor.",stat:"24.6K",statL:"Attendees · 3 sponsors managed",ch:["BTL","Digital"],img:["al-crowd","al-balloon","al-royald","al-keen","al-kbz","al-confetti"],cover:"al-crowd"},
+ {id:"volini",y:"2025",n:"13",client:"Sun Pharma · Volini",agency:"MCIX",date:"Planned 2025 · held Feb 2026",role:"Account Manager",kicker:"Pharma · Sport activation",title:"Smash It with Volini",dek:"A badminton tournament at The Zawana Badminton & Sport Arena, Yangon — #SmashItWithVolini.",brief:"Put Volini Gel in front of active players, right where muscle pain happens.",mine:"Planned the tournament: venue, organiser and production vendors — quotes, contracts and the KOL plan. Handed over before event day.",result:"Ran on 21 February 2026 on the plan I set up, with on-site sampling and #SmashItWithVolini content.",stat:"21.02",statL:"Tournament day · The Zawana, Yangon",ch:["BTL","Digital","KOL"],img:["vo-1","vo-3","vo-2","vo-0"],cover:"vo-3"},
+ {id:"sun-pharma",y:"2025",n:"14",client:"Sun Pharma",agency:"MCIX",date:"2025",role:"Account Manager",kicker:"Pharma · 360 IMC",title:"Four brands. One integrated plan",dek:"GestiFiz, Statum, Volini and Chericof, run as one 360 portfolio.",brief:"Keep four brands visible all year, each with its own audience, on one agency team.",mine:"Led five AEs. Ran briefs, quotes, vendor and KOL contracts, timelines and monthly reports across ATL, digital, KOL and on-ground.",result:"Four brands on one shared calendar and one reporting format — plus Unilever and Royal Myanmar Teamix on the same desk.",stat:"4 + 5",statL:"Brands · account executives led",ch:["BTL","ATL","Digital","KOL","PR"],img:[],type:true},
+ {id:"tiger",y:"archive",n:"16",client:"Tiger Beer",agency:"Vero Myanmar",date:"Jul 2024",role:"Senior Account Executive",kicker:"Beer · Festive concert",title:"Tiger Festive 2024",dek:"A seven-artist concert at Yangon Convention Centre for Tiger's festive campaign.",brief:"Bring Tiger's festive campaign on ground with a ticketed concert.",mine:"Account lead on the retainer: artist and vendor contracts, merch and print, run-of-show, post-event report.",result:"3,000+ attendees and seven artists, delivered on the planned date.",stat:"3,000+",statL:"Attendees · 7 artists",ch:["BTL","Digital","KOL"],img:["tiger-poster","tiger-crowd","tiger-artists","tiger-stage","tiger-merch","tiger-sticker"],cover:"tiger-poster"},
+ {id:"samsung",y:"archive",n:"17",client:"Samsung",agency:"Vero Myanmar",date:"2024",role:"Senior Account Executive",kicker:"Tech · Launch + hackathon",title:"A launch inside a hackathon",dek:"Galaxy A06 met its audience at Samsung Innovation Campus, Lotte Hotel Yangon.",brief:"Launch to students and tech fans — not just the press.",mine:"Coordinated venue, vendors, media and KOL invites for the Innovation Campus awards, and supported the A06 launch on the day.",result:"Product launch, AI Hackathon awards and media moment under one roof.",stat:"3M",statL:"MMK top prize · AI Hackathon",ch:["BTL","KOL","PR"],img:["sic-award","a06-stage","a06-fold","sic-handover","a06-display","sic-campus","a06-vip"],cover:"sic-award"},
+ {id:"pep-recall",y:"archive",n:"18",client:"PEP Myanmar",agency:"Midas Creative",date:"2023 — 24",role:"Senior Account Executive",kicker:"Dairy · KOL × esports",title:"PEP Journey Recall",dek:"Childhood memories of PEP, replayed as a live action-game series with KOLs and Genesis Esports.",brief:"Make a heritage brand feel warm — and current.",mine:"Joined the brainstorm, coordinated KOLs with PR, briefed creative on visuals, and set budget split and KPIs with digital.",result:"Over a million views on Facebook alone.",stat:"1M+",statL:"Views · Facebook only",ch:["Digital","KOL","PR"],img:["pjr-group","pjr-key","pjr-key2","pjr-kol1","pjr-kol2","other-esports"],cover:"pjr-group"},
+ {id:"pep-tea",y:"archive",n:"19",client:"PEP Myanmar",agency:"Midas Creative",date:"2023 — 24",role:"Senior Account Executive",kicker:"Dairy · Experiential event",title:"A colonial-era tea shop, rebuilt",dek:"A promotional event in the capital, steeped in Myanmar's old tea shop culture.",brief:"Let people step into PEP's past — not just read about it.",mine:"Took the client brief, briefed creative on the concept, managed the set-build vendor and ran the event day.",result:"Set build, vintage signage, comic-strip print and retro gift packs delivered.",stat:"1:1",statL:"From 3D render to real build",ch:["BTL","Digital","PR"],img:["tea-render","tea-wall","tea-comic","tea-sign","tea-pack","tea-laptop"],cover:"tea-comic"},
+ {id:"pep-shoot",y:"archive",n:"20",client:"PEP Myanmar",agency:"Midas Creative",date:"2023 — 24",role:"Senior Account Executive",kicker:"Dairy · Lifestyle photoshoot",title:"One shoot. Every channel",dek:"Lifestyle images for PEP's commercial campaigns, shot in one production.",brief:"A family-warm image bank for PEP's commercial campaigns.",mine:"Briefed creative, booked the photographer, talent and set, and ran the shoot schedule and approvals.",result:"On-brand visuals used from social to the video wall.",stat:"1 shoot",statL:"Image bank for social and in-store screens",ch:["ATL","Digital"],img:["shoot-wall","shoot-1","shoot-2","shoot-3","shoot-green","shoot-set"],cover:"shoot-1"},
+ {id:"beausta",y:"archive",n:"21",client:"Beausta Myanmar",agency:"Idea Capsule",date:"2022 — 23",role:"Senior Account Executive",kicker:"Beauty · Social + AR",title:"Beauty you can try on",dek:"An AR filter and TikTok campaign for Beausta, fronted by two of Myanmar's rising actresses.",brief:"Proposed the idea and got the budget approved.",mine:"Contracted the two KOLs and the AR developer, and linked them with our creative and digital teams.",result:"Campaign delivered with two KOLs and a working AR filter.",stat:"AR",statL:"Filter × TikTok · 2 KOLs",ch:["Digital","KOL"],img:["beausta-2","beausta-1","beausta-3"],cover:"beausta-2"}
+];
+const WALL=[["cr-tigerbanner","Tiger · Uncage campaign banner",1],["cr-tigerposter","Tiger · concert line-up"],["cr-rule","Rule the Night · event poster"],["cr-pepman","PEP · social creative"],["cr-cow","PEP · International Friendship Day"],["cr-xmas","Christmas EDM · schedule"],["tiger-sticker","Tiger Festive · sticker pack"],["cr-tigerbanner2","Tiger · bottle-cap promotion",1]];
+const CREW=["team-1","team-stage","team-night","team-2","team-table","team-suits"];
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const im=(n,small,alt,cls,eager)=>{const d=D[n]||[800,800];const w=small?Math.round(d[0]*560/Math.max(d[0],d[1])):d[0];const h=small?Math.round(d[1]*560/Math.max(d[0],d[1])):d[1];return `<img src="img/${n}${small?'-s':''}.webp" width="${w}" height="${h}" alt="${esc(alt)}"${cls?` class="${cls}"`:''} loading="${eager?'eager':'lazy'}" decoding="async">`};
+const CH=["BTL","ATL","Digital","KOL","PR"];
+const chips=p=>`<div class="chips">${CH.map(c=>`<span class="chip${c==='BTL'?' btl':''}${p.ch.includes(c)?' on':''}">${c}</span>`).join('')}</div>`;
+
+// cards
+const grid=$('#grid');
+grid.innerHTML=P.map(p=>`<button class="card" type="button" data-id="${p.id}" aria-label="Open ${esc(p.title)}">
+  <div class="thumb">${p.type?`<div class="type-cover" style="position:absolute;inset:0"><span>GestiFiz</span><span>Statum</span><span class="v">Volini</span><span>Chericof</span></div>`:im(p.cover,true,p.title)}<span class="mono tag">№ ${p.n}</span><span class="stat-tag">${esc(p.stat)}</span></div>
+  <div class="meta mono"><span>${esc(p.client)}</span><span>${esc(p.date)}</span></div>
+  <h3>${esc(p.title)}</h3>
+  <p>${esc(p.dek)}</p>
+  ${chips(p)}
+</button>`).join('');
+
+// filters
+const state={y:'all',c:new Set()};
+try{const s=JSON.parse(localStorage.getItem('wpa-f')||'null');if(s){state.y=s.y||'all';(s.c||[]).forEach(c=>state.c.add(c))}}catch(e){}
+function applyF(){
+  let shown=0;
+  grid.querySelectorAll('.card').forEach(el=>{const p=P.find(x=>x.id===el.dataset.id);const ok=(state.y==='all'||p.y===state.y)&&[...state.c].every(c=>p.ch.includes(c));el.hidden=!ok;if(ok)shown++});
+  $('#count').textContent=`${shown} of ${P.length}`;
+  $('#empty').hidden=shown>0;
+  document.querySelectorAll('#years button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.y===state.y));
+  document.querySelectorAll('#chans button').forEach(b=>b.setAttribute('aria-pressed',state.c.has(b.dataset.c)));
+  try{localStorage.setItem('wpa-f',JSON.stringify({y:state.y,c:[...state.c]}))}catch(e){}
+}
+$('#years').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;state.y=b.dataset.y;applyF()});
+$('#chans').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const c=b.dataset.c;state.c.has(c)?state.c.delete(c):state.c.add(c);applyF()});
+applyF();
+
+// case dialog
+const dlg=$('#case');let cur=-1;
+function visibleList(){return P.filter(p=>!grid.querySelector(`[data-id="${p.id}"]`).hidden)}
+function openCase(id,push){
+  const i=P.findIndex(p=>p.id===id);if(i<0)return;cur=i;const p=P[i];
+  dlg.innerHTML=`<div class="cbar"><span class="mono">№ ${p.n} · ${esc(p.client)} · ${esc(p.agency)} · ${esc(p.date)}</span>
+    <button class="ibtn" type="button" data-nav="-1" aria-label="Previous project">←</button><button class="ibtn" type="button" data-nav="1" aria-label="Next project">→</button><button class="ibtn" type="button" data-close>Close</button></div>
+  <div class="cbody">
+    <div style="display:grid;gap:16px"><span class="mono muted">${esc(p.kicker)} · ${esc(p.role)}</span>${chips(p)}<h2 id="case-title">${esc(p.title)}<span class="dot">.</span></h2><p class="dek">${esc(p.dek)}</p></div>
+    ${p.type?`<div class="sun"><div><span class="mono">Brand 01</span><b>GestiFiz</b></div><div><span class="mono">Brand 02</span><b>Statum</b></div><div class="v"><span class="mono">Brand 03 · see № 13</span><b>Volini</b></div><div><span class="mono">Brand 04</span><b>Chericof</b></div></div>`:
+    `<div class="gal-wrap"><div class="gal" id="gal" tabindex="0" aria-label="Project photos, scroll sideways">${p.img.map((n,k)=>im(n,false,`${p.title} — photo ${k+1}`,'',k<2)).join('')}</div>
+    <div class="gnav"><button type="button" data-g="-1" aria-label="Previous photo">←</button><button type="button" data-g="1" aria-label="Next photo">→</button><span class="mono muted" style="align-self:center">${p.img.length} photos</span></div></div>`}
+    <div class="cgrid2">
+      <div class="rows"><div><span class="mono">Brief</span><span>${esc(p.brief)}</span></div><div><span class="mono">My role</span><span>${esc(p.mine)}</span></div><div><span class="mono">Result</span><span>${esc(p.result)}</span></div></div>
+      <div class="bigstat"><b>${esc(p.stat)}</b><span class="mono">${esc(p.statL)}</span></div>
+    </div>
+  </div>`;
+  if(!dlg.open){dlg.showModal();document.documentElement.style.overflow='hidden'}
+  dlg.scrollTop=0;
+  if(push!==false){try{history.replaceState(null,'','#'+p.id)}catch(e){location.hash=p.id}}
+}
+function closeCase(){if(dlg.open)dlg.close()}
+dlg.addEventListener('close',()=>{document.documentElement.style.overflow='';try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}});
+dlg.addEventListener('click',e=>{
+  if(e.target===dlg)return closeCase();
+  const n=e.target.closest('[data-nav]');if(n){const L=visibleList().length?visibleList():P;let k=L.findIndex(p=>p.id===P[cur].id);k=(k+ +n.dataset.nav+L.length)%L.length;openCase(L[k].id);return}
+  if(e.target.closest('[data-close]'))return closeCase();
+  const g=e.target.closest('[data-g]');if(g){const gal=$('#gal');gal.scrollBy({left:(+g.dataset.g)*gal.clientWidth*.8,behavior:'smooth'})}
+});
+dlg.addEventListener('keydown',e=>{if(e.target.closest&&e.target.closest('#gal'))return;if(e.key==='ArrowRight')dlg.querySelector('[data-nav="1"]').click();if(e.key==='ArrowLeft')dlg.querySelector('[data-nav="-1"]').click()});
+grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openCase(c.dataset.id)});
+function fromHash(){const h=location.hash.slice(1);if(P.some(p=>p.id===h))openCase(h,false)}
+window.addEventListener('hashchange',fromHash);fromHash();
+
+// creative wall + lightbox
+const wall=$('#wall');
+wall.innerHTML=WALL.map(([n,cap,wide],i)=>`<button type="button" data-i="${i}" class="${wide?'wide':''}" aria-label="View ${esc(cap)}">${im(n,true,cap)}</button>`).join('');
+const lb=$('#lb');let li=0;
+function showLb(i){li=(i+WALL.length)%WALL.length;const [n,cap]=WALL[li];const d=D[n];const img=$('#lb-img');img.src=`img/${n}.webp`;img.width=d[0];img.height=d[1];img.alt=cap;$('#lb-cap').textContent=cap;if(!lb.open)lb.showModal()}
+wall.addEventListener('click',e=>{const b=e.target.closest('button');if(b)showLb(+b.dataset.i)});
+$('#lb-prev').onclick=()=>showLb(li-1);$('#lb-next').onclick=()=>showLb(li+1);$('#lb-close').onclick=()=>lb.close();
+lb.addEventListener('keydown',e=>{if(e.key==='ArrowRight')showLb(li+1);if(e.key==='ArrowLeft')showLb(li-1)});
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.id==='lb-img')lb.close()});
+
+// crew
+$('#crew').innerHTML=CREW.map(n=>im(n,true,'Agency and client team photo')).join('');
+
+// copy
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
+  const el=document.getElementById(b.dataset.copy);const t=el.textContent.trim();const orig=b.textContent;
+  const done=ok=>{b.textContent=ok?'Copied':'Selected — copy it';setTimeout(()=>b.textContent=orig,1800)};
+  const sel=()=>{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);done(false)};
+  try{navigator.clipboard.writeText(t).then(()=>done(true),sel)}catch(e){sel()}
+}));
+</script>
+</body>
+</html>
